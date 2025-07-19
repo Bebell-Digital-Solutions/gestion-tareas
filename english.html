@@ -5,6 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Organizador de Tareas</title>
   <style>
+
+  .custom-image-widget {
+            position: fixed !important;
+            top: 50px !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            right: 0px;
+            z-index: 999;
+        }
+        
+        .custom-image {
+            width: 70px;
+            height: auto;
+            transition: transform 0.2s;
+        }
+        
+        .custom-image-widget:hover .custom-image {
+            transform: scale(1.05);
+        }
+        
+        .custom-image-widget:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+                
+        
+
+
+    
     body {
       font-family: Arial, sans-serif;
       background-color: #f0f0f0;
@@ -263,6 +292,23 @@
   </style>
 </head>
 <body>
+
+
+       <div class="custom-image-widget" style="position: relative; display: inline-block;"> <!-- ADD THESE STYLES -->
+    <a href="https://bebell-digital-solutions.github.io/gestion-tareas/">
+        <img class="custom-image" 
+             src="https://bucket.mlcdn.com/a/3336/3336910/images/138f14304ea21715dfae64ae5fe1d71b08c2d451.png" 
+             alt="English Translation"
+             style="display: block;"> <!-- Ensure image is block-level -->
+    </a>
+
+</div>
+   
+
+
+
+
+  
   <div class="container">
     <h1>☑️ Tasks for the Day</h1>
     <p>Keep your daily tasks organized and boost your  productivity</p>
